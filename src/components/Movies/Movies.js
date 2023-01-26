@@ -8,8 +8,10 @@ function MovieComponent() {
 
 
             <h1> Most Popular</h1>
+            
             <img src="" alt="" />
 
+        
             <h1> Upcoming</h1>
             <img src="" alt="" />
         </div>

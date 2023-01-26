@@ -7,10 +7,33 @@ import HomeComponent from './components/Home/Home';
 import MovieComponent from "./components/Movies/Movies";
 import TvComponent from './components/TVShows/TVShows';
 import AnimeComponent from './components/Anime/Anime';
+import './App.css'
 
 
 
-function App() {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showModal: false,
+      darkenBackground: false
+    };
+  }
+
+  handleOpenModal = () => {
+    this.setState({ showModal: true, darkenBackground: true});
+  }
+
+  handleCloseModal = () => {
+    this.setState({ showModal: false, darkenBackground: false});
+  }
+  render() {
+    const {darkenBackground} = this.state;
+    let className = 'app-container';
+    if(darkenBackground) {
+      className += 'darken-background';
+    
+  }
   return (
      
   <BrowserRouter>
@@ -30,6 +53,7 @@ function App() {
     </div>
   </BrowserRouter>
   );
+}
 }
 
 export default App;
