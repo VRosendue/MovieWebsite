@@ -1,58 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.background {
-    color: black;
-}
-
-
-.navbar-container {
-    display: inline-block;
-    font-size: 20px;
-    content: normal;
-    font-family: Arial, sans-serif;
-    color: blue;
-    padding: 50px;
-    margin-top: -12rem;
-}
-
-
-.movi-logo {
-    top: 100px;
-    width: 200px;
-    height: 200px;
-    
-}
-
-
-.homeBtn {
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
     color: white;
-    padding: 7rem;
-    text-decoration: none;
-    margin-top: -12rem;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.site-title{
+    font-size: 2rem;
 }
 
-
-.movieBtn {
-    color: white;
-    padding: 7rem;
-    text-decoration: none;
-} 
-
-.tvShowsBtn {
-    color: white;
-    padding: 7rem;
-    text-decoration: none;
-
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
-.animeBtn {
-    color: white;
-    padding: 7rem;
-    text-decoration: none;
+.nav a{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+}
+.nafv li.active  {
+    background-color: #555;
 }
 
-.profile {
-
-    color:white;
-    padding: 7rem;
-    text-decoration: none;
+.nav li:hover {
+    background-color: #777;
 }
