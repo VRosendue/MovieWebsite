@@ -1,29 +1,34 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
-import './Navbar.css'
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
   return (
-    <>
-     <nav className='navbar'>
-        <div className='navbar-container'>
-            
-            <Link to="/" className="movi-logo"><img src='logo_200x200.png'></img> </Link>
-            <Link to="/home" className="homeBtn">HOME</Link>
-            <Link to="/movies" className="movieBtn">MOVIES</Link>
-            <Link to="/tv-shows" className="tvShowsBtn">TV SHOWS</Link>
-            <Link to="/anime" className="animeBtn">ANIME</Link>
-
-            
-            <Link to="/profile" className="profile" ><i class="fa fa-user-circle-o" aria-hidden="true"></i></Link>
-                
-            
-            
-        </div>
-     </nav>
-    </>
-  )
+    <nav className="nav">
+      <Link to="/" className="site-title">
+        image
+      </Link>
+      <ul>
+        <li>
+          <Link to="/Home">Home</Link>
+        </li>
+        <li>
+          <Link to="/Movies">Movies</Link>
+        </li>
+        <li>
+          <Link to="/TVShows">Tv Shows</Link>
+        </li>
+        <li>
+          <Link to="/Anime">Anime</Link>
+        </li>
+        <li>
+          <Link to="/profile" className="profile">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
