@@ -22,6 +22,12 @@ function Navbar() {
           <Link to="/Anime">Anime</Link>
         </li>
         <li>
+          <Link to="/News">News</Link>
+        </li>
+        <li>
+          <Link to="/Search">Search</Link>
+        </li>
+        <li>
           <Link to="/profile" className="profile">
             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
           </Link>
