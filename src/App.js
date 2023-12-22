@@ -7,6 +7,7 @@ import HomeComponent from './components/Home/Home';
 import MovieComponent from "./components/Movies/Movies";
 import TvComponent from './components/TVShows/TVShows';
 import AnimeComponent from './components/Anime/Anime';
+import SearchBar from './components/Search/Test';
 import './App.css'
 
 
@@ -48,6 +49,7 @@ class App extends React.Component {
         <Route path='/tv-shows' exact element= { <TvComponent/> } />
         <Route path='/anime' exact element = { <AnimeComponent/> } />
         <Route path='/profile' exact element={ <LoginModal/> } />
+        <Route path='/searchbar' exact element={ <SearchBar/> } />
         
       </Routes>
     </div>
